@@ -17,10 +17,10 @@ export default function Home() {
                 <div className='w-1/4 '>3</div>
             </div>
             <div className='h-1/4 flex justify-center items-center'>
-<div className='border-[3px] border-black rounded-15 shadow-cardshadow p-6' style={{width:"calc(100% - 30%)"}}>
-   <div className='font-black text-4xl mb-2'> Are You Ready? </div>
-   <Button width={'100%'} color={'var(--lightGreen)'} > Start the test</Button>
-</div>
+            <div className='border-[3px] border-black rounded-15 shadow-cardshadow p-6' style={{width:"calc(100% - 30%)"}}>
+            <div className='font-black text-4xl mb-2'> Are You Ready? </div>
+            <Button width={'100%'} color={'var(--lightGreen)'} > Start the test</Button>
+            </div>
             </div>
             </Layout>
     </div>
