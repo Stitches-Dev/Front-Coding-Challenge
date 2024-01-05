@@ -1,10 +1,10 @@
 import React from 'react';
-function TellQuestions() {
+function AnimatedImage() {
     return (
         <div className="page-cotainer">
-
+AnimatedImage
         </div>
     );
 };
 
-export default TellQuestions;
+export default AnimatedImage;

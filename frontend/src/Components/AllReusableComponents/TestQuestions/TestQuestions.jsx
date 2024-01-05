@@ -1,10 +1,10 @@
 import React from 'react';
-function OptionComponent() {
+function TestQuestions() {
     return (
         <div className="page-cotainer">
-OptionComponent
+TestQuestions
         </div>
     );
 };
 
-export default OptionComponent;
+export default TestQuestions;
