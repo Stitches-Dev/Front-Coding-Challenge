@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Layout from '../../Components/Layout/Layout';
 import Card from '../../Components/Card/Card';
 import BackButton from '../../Components/BackButton/BackButton';
 import axios from 'axios';
 import Button from '../../Components/Button/Button';
+import { useNavigate } from 'react-router';
 
 export default function Page1() {
-  const [fullName, setFullName] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [submitting, setSubmitting] = useState(false);
-
+  const [questions,setQuestion] = useState();
+const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = {
-      fullName,
-      email,
+     name: name,
+     email: email,
     };
 
     try {
@@ -25,6 +27,7 @@ export default function Page1() {
 
       // Handle success, e.g., redirect to the next page
       console.log('Form submitted successfully', response.data);
+      // navigate.push(`/question/${response.data.questionId}`);
 
       // Provide feedback to the user (e.g., show success message)
     } catch (error) {
@@ -34,6 +37,19 @@ export default function Page1() {
       setSubmitting(false);
     }
   };
+  // useEffect(() => {
+  //   // Fetch a specific question based on questionId from the API
+  //   const fetchQuestions = async () => {
+  //     try {
+  //       const response = await axios.get(`http://192.168.18.111:8000/career-test`);
+  //       setQuestion(response.data);
+  //     } catch (error) {
+  //       console.error('Error fetching question:', error);
+  //     }
+  //   };
+
+  //   fetchQuestions();
+  // }, []);
 
   return (
     <Layout>
@@ -47,7 +63,7 @@ export default function Page1() {
                 <input
                   type='text'
                   className='border-[3px]  w-full border-black rounded-15 p-2 mb-3'
-                  onChange={(e) => setFullName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder='eg: James johnes'
                 />
                 <span className='font-bold text-xs'>Email</span>
