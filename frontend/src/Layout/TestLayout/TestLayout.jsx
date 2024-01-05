@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
+
 import React from 'react';
 import ProgressBar from '../../Components/AllReusableComponents/ProgressBar/ProgressBar.jsx'
-import AnimatedImage from '../../Components/AllReusableComponents/AnimatedImage.jsx'
+import AnimatedImage from '../../Components/AllReusableComponents/AnimatedImage/AnimatedImage.jsx'
 import TellUsAboutYourself from '../../Components/AllReusableComponents/TellUsAboutYourself/TellUsAboutYourself.jsx';
 import WelcomePage from '../../Components/AllReusableComponents/WelcomePage/WelcomePage.jsx'
 import TestQuestions from '../../Components/AllReusableComponents/TestQuestions/TestQuestions.jsx'

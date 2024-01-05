@@ -1,8 +1,9 @@
 // Layout.js
 import React, { Fragment, useState } from "react";
 import ResultsPage from "../Components/AllReusableComponents/ResultsPage/ResultsPage";
-const [isBeingExamined, setIsBeingExamined] = useState(true);
+import TestLayout from './TestLayout/TestLayout.jsx'
 function Layout() {
+    const [isBeingExamined, setIsBeingExamined] = useState(true);
 
     return (
         <Fragment>

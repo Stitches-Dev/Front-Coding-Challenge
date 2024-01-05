@@ -1,7 +1,6 @@
-import { Router } from "express";
 import "./App.css";
-import WelcomePage from "./Components/WelcomePage/WelcomePage.jsx";
-import { Navigate, Route, Routes } from "react-router";
+import { Navigate, Route, Routes, Router } from "react-router-dom";
+import Layout from '../src/Layout/Layout.jsx'
 function App() {
   return (
     <Router>
