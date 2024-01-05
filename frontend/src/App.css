@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --yellow: #f7d854;
   --lightGreen: #a4e3dc;

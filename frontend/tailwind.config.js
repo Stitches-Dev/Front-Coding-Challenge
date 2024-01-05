@@ -1,9 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    extend: {
+      colors: {
+        yellow: 'var(--yellow)',
+        lightGreen: 'var(--lightGreen)',
+        blue: 'var(--blue)',
+        selected: 'var(--selected)',
+        pink: 'var(--pink)',
+        grey: 'var(--grey)',
+        white: 'var(--white)',
+        darkgrey: 'var(--darkgrey)',
+      },
+      boxShadow: {
+        shadow: 'var(--shadow)',
+        greyShadow: 'var(--greyShadow)',
+        greyshadowHover: 'var(--greyshadow-hover)',
+        cardshadow: 'var(--cardshadow)',
+        shadowHover: 'var(--shadow-hover)',
+        shadowHoverCard: 'var(--shadow-hover-card)',
+      },
+      borderRadius: {
+        xl: 'var(--radius)',
+      },
 
+    },
+  },
+  plugins: [
+  
+  ],
+}
