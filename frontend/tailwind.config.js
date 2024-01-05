@@ -24,7 +24,7 @@ module.exports = {
         shadowHoverCard: 'var(--shadow-hover-card)',
       },
       borderRadius: {
-        xl: 'var(--radius)',
+        15: 'var(--radius)',
       },
 
     },
