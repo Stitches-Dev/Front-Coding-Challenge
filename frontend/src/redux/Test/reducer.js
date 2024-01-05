@@ -1,20 +1,20 @@
-import { SET_PAYLOAD, CLEAR_PAYLOAD } from './actionTypes.js'; // Adjust the import path
+import { SET_TEST_ID, CLEAR_TEST_ID } from './actionTypes.js'; // Adjust the import path
 
 const initialState = {
-  payload: ''
+  test_id: ''
 };
 
 const testReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_PAYLOAD:
+    case SET_TEST_ID:
       return {
         ...state,
-        payload: action.payload,
+        test_id: action.payload,
       };
-    case CLEAR_PAYLOAD:
+    case CLEAR_TEST_ID:
       return {
         ...state,
-        payload: '',
+        test_id: '',
       };
     default:
       return state;

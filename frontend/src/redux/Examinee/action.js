@@ -1,10 +1,10 @@
 // action.js
-import { CLEAR_PAYLOAD, SET_PAYLOAD } from "./actionTypes";
+import { CLEAR_EXAMINEE_ID, CLEAR_PAYLOAD, SET_EXAMINEE_ID, SET_PAYLOAD } from "./actionTypes";
 
-export const setPayload = (payload) => ({
-  type: SET_PAYLOAD,
-  payload: payload,
+export const setExamineeId = (examinee_id) => ({
+  type: SET_EXAMINEE_ID,
+  payload: examinee_id,
 });
 export const clearPayload = () => ({
-  type: CLEAR_PAYLOAD,
+  type: CLEAR_EXAMINEE_ID,
 });

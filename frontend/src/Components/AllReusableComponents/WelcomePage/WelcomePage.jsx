@@ -8,7 +8,7 @@ function WelcomePage() {
   const color = "light blue"
   // const width = "30%"
   const handleClick = () => {
-    navigate('/AboutYourselfOne')
+    navigate('/TellUsAboutYourself')
   }
   const disabled = true;
   const textColor = "black"
