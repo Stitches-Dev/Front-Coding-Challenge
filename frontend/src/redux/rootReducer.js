@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
-import userReducer from './UserInfo/reducer.js';
-import orderReducer from './Order/reducer.ts';
+import userReducer from './Examinee/reducer.js';
+import orderReducer from './Test/reducer.ts';
+import examineeReducer from './Examinee/reducer.js';
 
 const rootReducer = combineReducers({
-    user: userReducer,
-    order: orderReducer,
+    test: testReducer,
+    examinee: examineeReducer,
    
 });
 

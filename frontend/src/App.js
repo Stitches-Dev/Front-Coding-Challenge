@@ -1,11 +1,17 @@
+import { Router } from "express";
 import "./App.css";
-import Button from "./Components/Button/Button";
-import Checkbox from "./Components/Checkbox/Checkbox";
+import WelcomePage from "./Components/WelcomePage/WelcomePage.jsx";
+import { Navigate, Route, Routes } from "react-router";
 function App() {
-  return <div className="App">
-<Welcome />
-
-  </div>;
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Layout />} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;

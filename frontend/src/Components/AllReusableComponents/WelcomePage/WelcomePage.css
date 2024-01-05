@@ -1,0 +1,15 @@
+.welcome-page-cotainer{
+    background-color: white;
+
+}
+.test-specs {
+    display: flex;
+    margin-top: 2%;
+}
+
+.test-spec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+}
